@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main ()
+{
+    int A[5];
+    A[0]=12;
+    A[1]=15;
+    A[2]=25; 
+    
+    printf("size of array : %lu\n",sizeof(A));
+    printf("size of A[0]: %d\n ",A[0]);
+    
+    
+    
+    return 0;
+}
