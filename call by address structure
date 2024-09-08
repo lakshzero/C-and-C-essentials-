@@ -1,0 +1,29 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+struct Rectangle
+{
+	int length;
+	int breadth;
+};
+struct Rectangle * fun()
+{
+    struct Rectangle *p;
+    p=new Rectangle;
+   //in c p=(struct rectangle *)malloc(sizeof(struct Rectangle));
+	
+	p->length=8;
+	p->breadth=7;
+	
+	return p;
+}
+
+int main()
+{
+	struct Rectangle *ptr=fun();//create obj and returns address
+	cout<<"Length"<<ptr->length<<endl<<"breadth"<<ptr->breadth<<endl; 
+	
+	
+	return 0;
+}
