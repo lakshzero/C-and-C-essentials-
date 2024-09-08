@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+struct arr {
+	int A[6];
+};
+
+
+
+void fun(struct arr a1) {
+	a1.A[0]=1;
+	a1.A[2]=55;
+	cout<<"Array in formal parameter"<<endl;
+	for(int i=0; i<6; i++) {
+		cout<<a1.A[i]<<endl;
+	}
+
+}
+int main()
+{
+	struct arr t= {{0,1,2,3,4,50}};
+	fun(t);
+	cout<<"array in acutal parameter : ";
+	for(int i=0; i<6; i++) {
+		cout<<t.A[i]<<endl;
+	}
+	return 0;
+}
