@@ -12,7 +12,7 @@ int main()
     struct Rectangle r1={10,5};
     r1.length=15;
     r1.breadth=20;
-printf("the parameters of rectangle are\n");
+printf("the parameters of rectangle are");
     printf("size of structure : %lu\n", sizeof(r1));
     printf("size of length : %d\n",r1.length);
     printf("size of breadth : %d\n",r1.breadth);    
